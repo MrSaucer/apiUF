@@ -1,0 +1,191 @@
+[
+    {
+        "id": "1",
+        "sigla": "ac",
+        "nome": "Acre",
+        "regiao": "Norte",
+        "populacao": "928518"
+    },
+    {
+        "id": "2",
+        "sigla": "al",
+        "nome": "Alagoas",
+        "regiao": "Nordeste",
+        "populacao": "3388186"
+    },
+    {
+        "id": "3",
+        "sigla": "am",
+        "nome": "Amazonas",
+        "regiao": "Norte",
+        "populacao": "4378338"
+    },
+    {
+        "id": "4",
+        "sigla": "ap",
+        "nome": "Amapá",
+        "regiao": "Norte",
+        "populacao": "905294"
+    },
+    {
+        "id": "5",
+        "sigla": "ba",
+        "nome": "Bahia",
+        "regiao": "Nordeste",
+        "populacao": "15072591"
+    },
+    {
+        "id": "6",
+        "sigla": "ce",
+        "nome": "Ceará",
+        "regiao": "Nordeste",
+        "populacao": "9331146"
+    },
+    {
+        "id": "7",
+        "sigla": "df",
+        "nome": "Distrito Federal",
+        "regiao": "Centro-Oeste",
+        "populacao": "3159008"
+    },
+    {
+        "id": "8",
+        "sigla": "es",
+        "nome": "Espírito Santo",
+        "regiao": "Sudeste",
+        "populacao": "4184440"
+    },
+    {
+        "id": "9",
+        "sigla": "go",
+        "nome": "Goiás",
+        "regiao": "Centro-Oeste",
+        "populacao": "7368403"
+    },
+    {
+        "id": "10",
+        "sigla": "ma",
+        "nome": "Maranhão",
+        "regiao": "Nordeste",
+        "populacao": "7219066"
+    },
+    {
+        "id": "11",
+        "sigla": "mg",
+        "nome": "Minas Gerais",
+        "regiao": "Sudeste",
+        "populacao": "21609182"
+    },
+    {
+        "id": "12",
+        "sigla": "ms",
+        "nome": "Mato Grosso do Sul",
+        "regiao": "Centro-Oeste",
+        "populacao": "2890084"
+    },
+    {
+        "id": "13",
+        "sigla": "mt",
+        "nome": "Mato Grosso",
+        "regiao": "Centro-Oeste",
+        "populacao": "3637651"
+    },
+    {
+        "id": "14",
+        "sigla": "pa",
+        "nome": "Pará",
+        "regiao": "Norte",
+        "populacao": "8926319"
+    },
+    {
+        "id": "15",
+        "sigla": "pb",
+        "nome": "Paraíba",
+        "regiao": "Nordeste",
+        "populacao": "4094681"
+    },
+    {
+        "id": "16",
+        "sigla": "pe",
+        "nome": "Pernambuco",
+        "regiao": "Nordeste",
+        "populacao": "9773805"
+    },
+    {
+        "id": "17",
+        "sigla": "pi",
+        "nome": "Piauí",
+        "regiao": "Nordeste",
+        "populacao": "3300712"
+    },
+    {
+        "id": "18",
+        "sigla": "pr",
+        "nome": "Paraná",
+        "regiao": "Sul",
+        "populacao": "11733800"
+    },
+    {
+        "id": "19",
+        "sigla": "rj",
+        "nome": "Rio de Janeiro",
+        "regiao": "Sudeste",
+        "populacao": "17623041"
+    },
+    {
+        "id": "20",
+        "sigla": "rn",
+        "nome": "Rio Grande do Norte",
+        "regiao": "Nordeste",
+        "populacao": "3606574"
+    },
+    {
+        "id": "21",
+        "sigla": "ro",
+        "nome": "Rondônia",
+        "regiao": "Norte",
+        "populacao": "1847350"
+    },
+    {
+        "id": "22",
+        "sigla": "rr",
+        "nome": "Roraima",
+        "regiao": "Norte",
+        "populacao": "675576"
+    },
+    {
+        "id": "23",
+        "sigla": "rs",
+        "nome": "Rio Grande do Sul",
+        "regiao": "Sul",
+        "populacao": "11537887"
+    },
+    {
+        "id": "24",
+        "sigla": "sc",
+        "nome": "Santa Catarina",
+        "regiao": "Sul",
+        "populacao": "7485510"
+    },
+    {
+        "id": "25",
+        "sigla": "se",
+        "nome": "Sergipe",
+        "regiao": "Nordeste",
+        "populacao": "2372088"
+    },
+    {
+        "id": "26",
+        "sigla": "sp",
+        "nome": "São Paulo",
+        "regiao": "Sudeste",
+        "populacao": "47256826"
+    },
+    {
+        "id": "27",
+        "sigla": "to",
+        "nome": "Tocantins",
+        "regiao": "Norte",
+        "populacao": "1636784"
+    }
+]
