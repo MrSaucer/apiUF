@@ -17,9 +17,9 @@ app.get('/uf', (req, res) => {
 // Rota para buscar um estado pelo ID
 app.get('/uf/:id', (req, res) => {
   const id = req.params.id;
-  const ufById = buscarUfPorId(id);
-  if (ufById) {
-    res.json(ufById);
+  const resultado = buscarUfPorId(id);
+  if (resultado) {
+    res.json(resultado);
   } else {
     res.status(404).send('UF não encontrada');
   }
