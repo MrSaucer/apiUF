@@ -6,6 +6,11 @@ export const buscarUfsFiltrados = (filtros) => {
   if (filtros) {
     // Verificar se o parâmetro "sigla" foi enviado nos filtros
     if (filtros.sigla) {
+      // Verificar se a sigla informada é válida
+      const ufValida = colecaoUf.some((uf) => uf.sigla === filtros.sigla);
+      if (!ufValida) {
+        return null; // retorna null caso a sigla informada seja inválida
+      }
       // Filtrar os estados com base na sigla
       ufs = ufs.filter((uf) => uf.sigla === filtros.sigla);
     }
@@ -17,9 +22,6 @@ export const buscarUfsFiltrados = (filtros) => {
   }
   return ufs;
 };
-
-
-
 
 // Controlador para buscar um estado pelo ID
 export const buscarUfPorId = (id) => {
