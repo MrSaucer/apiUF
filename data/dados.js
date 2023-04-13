@@ -1,4 +1,4 @@
-export const uf = [
+export const colecaoUf = [
     {
         "id": 1,
         "uf": "AC",
