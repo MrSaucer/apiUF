@@ -1,31 +1,39 @@
 import express from 'express';
-import { buscarUfs, buscarUfPorId, buscarUfsPorSigla } from './servicos/servico.js';
+import cors from 'cors';
+import { buscarUfs, buscarUfPorId, buscarUfsPorNome } from './servicos/servico.js';
+
 
 const app = express();
+app.use(cors({
+  origin: 'https://api-ufs.onrender.com', 
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+}));
 
-app.get('/uf/', (req, res) => {
-  const sigla = req.query.sigla;
-  const resultado = sigla ? buscarUfsPorSigla(sigla) : buscarUfs();
-  
-  if (resultado) {
-    res.send(resultado);
+
+app.get('/ufs', (req, res) => {
+  const nomeUf = req.query.busca;
+  const resultado = nomeUf ? buscarUfsPorNome(nomeUf) : buscarUfs();
+  if (resultado.length > 0) {
+    res.json(resultado);
   } else {
-    res.status(404).send('UF não encontrada');
+    res.status(404).send({ "erro": "Nenhuma UF encontrada" });
   }
 });
 
-  
-  app.get('/uf/:id', (req, res) => {
-    const id = req.params.id;
-    const resultado = buscarUfPorId(id);
+app.get('/ufs/:iduf', (req, res) => {
+  const uf = buscarUfPorId(req.params.iduf);
 
-    if (resultado) {
-      res.send(resultado);
-    } else {
-      res.status(404).send('UF não encontrada');
-    }
-  });
-  
-  app.listen(8080, () => {
-    console.log('Servidor iniciado na porta 8080');
+  if (uf) {
+    res.json(uf);
+  } else if (isNaN(parseInt(req.params.iduf))) {
+    res.status(400).send({ "erro": "Requisição inválida" });
+  } else {
+    res.status(404).send({ "erro": "UF não encontrada" });
+  }
 });
+
+app.listen(8080, () => {
+  console.log('Servidor iniciado na porta 8080');
+});
+
